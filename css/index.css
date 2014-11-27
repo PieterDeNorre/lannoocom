@@ -1,0 +1,505 @@
+	html {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	body {
+		height:100%;
+		width:100%;
+		overflow: hidden;
+		font-size:100%
+	}
+
+	/* LOGO */
+
+	#logo {
+		position: fixed;
+		background-image: url('../img/icons/lannoo.png');
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 80px;
+		height: 80px;
+		background-color: rgba(255, 100, 0, 1);
+		border-radius: 40px;
+		margin: 5px 5px 5px 5px;
+		z-index: 100;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	/* MAIN NAV FLOATING LEFT */
+	/* intro */
+
+	#nav_cont.intro,
+	#nav_cont.tech,
+	#nav_cont.finishing,
+	#nav_cont.quant,
+	#nav_cont.contact { 
+		position: fixed;
+		z-index: 99;
+		padding: 20px 0px 10px 5px;
+		vertical-align: bottom;
+		/* Center Vertical middle */
+		bottom:360px;
+	}
+	#nav_cont.tech { 
+		bottom: 270px;
+	}
+	#nav_cont.finishing { 
+		bottom: 180px;
+	}
+	#nav_cont.quant { 
+		bottom: 90px;
+	}
+	#nav_cont.contact { 
+		bottom: 0px;
+	}
+	/* NAV CONT INTRO */
+
+	#intro {
+		display: block;
+		float:left;
+		width: 80px;
+		height: 80px;
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 40px;
+		margin: 5px 5px 5px 5px;
+		z-index: 100;
+		cursor: pointer;
+	}
+	#intro.btn {
+		background-image: url('../img/icons/afro.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#intro.touch_btn,
+	#intro.fist_btn,
+	#intro.small_btn,
+	#intro.bubble_btn {
+		background-color: rgba(0, 0, 0, 0.1);
+		/*display: none;*/
+	}
+
+
+	#intro.fist_btn {
+		background-image: url('../img/icons/fist.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#intro.small_btn {
+		background-image: url('../img/icons/small.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#intro.bubble_btn {
+		background-image: url('../img/icons/bubble.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+
+	/* NAV CONT TECH */
+
+	#tech {
+		float:left;
+		width: 80px;
+		height: 80px;
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 40px;
+		margin: 5px 5px 5px 5px;
+		z-index: 98;
+		cursor: pointer;
+	}
+
+	#tech.btn {
+		background-image: url('../img/icons/tech.png');
+		background-size: 80%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#tech.raised_btn,
+	#tech.water_btn,
+	#tech.white_btn,
+	#tech.textured_btn {
+		background-color: rgba(0, 0, 0, 0.1);
+		display: none;
+	}
+
+	#tech.raised_btn {
+		background-image: url('../img/icons/raised.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#tech.water_btn {
+		background-image: url('../img/icons/water.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#tech.white_btn {
+		background-image: url('../img/icons/white.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#tech.textured_btn {
+		background-image: url('../img/icons/textured.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	/* NAV CONT FINISHING*/
+
+	#finishing {
+		float:left;
+		width: 80px;
+		height: 80px;
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 40px;
+		margin: 5px 5px 5px 5px;
+		z-index: 97;
+		cursor: pointer;
+	}
+
+	#finishing.btn {
+		background-image: url('../img/icons/finish.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#finishing.foil_btn,
+	#finishing.crease_btn,
+	#finishing.bind_btn,
+	#finishing.magnetic_btn,
+	#finishing.laminate_btn,
+	#finishing.wireo_btn  {
+		background-color: rgba(0, 0, 0, 0.1);
+		display: none;
+	}
+	#finishing.foil_btn {
+		background-image: url('../img/icons/foil.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#finishing.crease_btn {
+		background-image: url('../img/icons/crease.png');
+		background-size:80%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#finishing.bind_btn {
+		background-image: url('../img/icons/bind.png');
+		background-size: 80%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#finishing.laminate_btn {
+		background-image: url('../img/icons/laminate.png');
+		background-size: 65%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#finishing.magnetic_btn {
+		background-image: url('../img/icons/magnetic.png');
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#finishing.wireo_btn {
+		background-image: url('../img/icons/wireo.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	/* NAV CONT QUANTITIES */
+
+	#quant {
+		float:left;
+		width: 80px;
+		height: 80px;
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 40px;
+		margin: 5px 5px 5px 5px;
+		z-index: 96;
+		cursor: pointer;
+	}
+
+	#quant.btn {
+		background-image: url('../img/icons/q.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	#quant.tiny_btn,
+	#quant.large_btn  {
+		background-color: rgba(0, 0, 0, 0.1);
+		display: none;	
+	}
+	#quant.large_btn {
+		background-image: url('../img/icons/large.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#quant.tiny_btn {
+		background-image: url('../img/icons/tiny.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	/* NAV CONT CONTACT */
+
+	#contact {
+		float:left;
+		width: 80px;
+		height: 80px;
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 40px;
+		margin: 5px 5px 5px 5px;
+		z-index: 95;
+		cursor: pointer;
+	}
+
+	#contact.mail_btn {
+		background-image: url('../img/icons/mail.png');
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#contact.mail_btn:hover {
+		background-color: rgba(255, 100, 0, 0.7);
+	}
+
+	/* CONTENT IMAGES */
+	#container {
+		position: relative;
+		width:100%;
+		height: 100%;
+		float:left;
+	}
+
+	#imageholder {
+		position: absolute;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	/* touch images */
+
+	.fist {
+		background-image: url('../img/bg/fist2.jpg');
+		display: none;
+	}
+
+	.touch {
+		background-image: url('../img/bg/touch.jpg');
+
+	}
+
+	.small {
+		background-image: url('../img/bg/small.jpg');
+		display: none;
+	}
+	.bubble {
+		background-image: url('../img/bg/bubble.jpg');
+		display: none;
+	}
+
+	/* tech  images */
+
+	.overal {
+		background-image: url('../img/bg/tech.jpg');
+		/*display: none;*/
+	}
+
+	.raised {
+		background-image: url('../img/bg/raised.jpg');
+		display: none;
+	}
+
+	.water {
+		background-image: url('../img/bg/water.jpg');
+		display: none;
+	}
+	.white {
+		background-image: url('../img/bg/white.jpg');
+		display: none;
+	}
+	.textured {
+		background-image: url('../img/bg/textured.jpg');
+		display: none;
+	}
+
+
+	/* Finishing  images */
+
+	.finishingoveral {
+		background-image: url('../img/bg/finishing.jpg');
+		/*display: none;*/
+	}
+
+	.bind {
+		background-image: url('../img/bg/bind.jpg');
+		display: none;
+	}
+
+	.crease {
+		background-image: url('../img/bg/crease.jpg');
+		display: none;
+	}
+	.laminate {
+		background-image: url('../img/bg/laminate.jpg');
+		display: none;
+	}
+	.wireo {
+		background-image: url('../img/bg/wireo.jpg');
+		display: none;
+	}
+	.foil {
+		background-image: url('../img/bg/foil.jpg');
+		display: none;
+	}
+	.magnetic {
+		background-image: url('../img/bg/magnetic_2.jpg');
+		display: none;
+	}
+
+	/* Quantities images */
+
+	.quantoveral {
+		background-image: url('../img/bg/quant.jpg');
+		/*display: none;*/
+	}
+	.large {
+		background-image: url('../img/bg/large.jpg');
+		display: none;
+	}
+	.tiny {
+		background-image: url('../img/bg/tiny.jpg');
+		display: none;
+	}
+
+	/* CONTENT TXT */
+
+	#oneliner {
+		color: #FFF;
+		position: relative;
+		text-align: center;
+	}
+	h1 {	
+		display: block;
+		font-family: 'Six Caps', sans-serif;
+		font-size: 120px;
+		font-weight: 400;
+		padding: 20px 20px 20px 20px;
+		background-color: rgba(0,0,0,0.5);
+	}
+	h2 {	
+		display: block;
+		font-family: 'Nunito', sans-serif;
+		font-size: 1.2em;
+		font-weight: 400;
+
+		padding: 15px 0px 15px 0px;
+		border-top:1px dotted rgba(255,100,0,0.9);
+		background-color: rgba(0,0,0,0.2);
+	}
+	h2.link,
+	h2.link2,
+	h2.link3 {	
+		cursor: pointer;
+		/*text-decoration: underline;*/
+	}
+	h2.link:hover,
+	h2.link2:hover,
+	h2.link3:hover {
+		background-color: rgba(255,100,0,0.7);
+	}	
+/* Smartphones (portret & landscape) -------------------- */
+@media screen and (max-width: 480px) {
+
+	#logo {
+		position: fixed;
+		background-image: url('../img/icons/lannoo.png');
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 60px;
+		height: 60px;
+		background-color: rgba(255, 100, 0, 1);
+		border-radius: 30px;
+		margin: 5px 5px 5px 5px;
+		z-index: 100;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	/* Oneliners */
+	h1 {	
+		font-size: 60px;
+		background-color: rgba(0,0,0,0.8);
+	}
+	h2 {	
+		font-size: 1.0em;
+		font-weight: 600;
+		background-color: rgba(0,0,0,0.6);
+		padding: 7px 10px 7px 10px;
+		line-height: 20px;
+	}
+	/* Navigations */
+
+	#nav_cont.intro,
+	#nav_cont.tech,
+	#nav_cont.finishing,
+	#nav_cont.quant,
+	#nav_cont.contact { 
+		position: fixed;
+		z-index: 99;
+		padding: 20px 0px 0px 5px;
+		vertical-align: bottom;
+		/* Center Vertical middle */
+		margin-top: 0px;
+		top:50%;
+	}
+	#nav_cont.tech { 
+		margin-top: 50px;
+	}
+	#nav_cont.finishing { 
+		margin-top: 100px;
+	}
+	#nav_cont.quant { 
+		margin-top: 150px;
+	}
+	#nav_cont.contact { 
+		margin-top: 200px;
+	}
+
+
+	#intro,
+	#tech,
+	#quant,
+	#finishing,
+	#contact {
+		width: 40px;
+		height: 40px;
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+		margin: 0px 5px 5px 5px;
+	}
+}
